@@ -2,17 +2,17 @@
 """
 consolidate.py - Bookmarks consolidator
 
-Takes two sets of bookmarks, exported as HTML from Firefox, Chrome, etc., and
-combines them together into an importable HTML file.
+ Takes two HTML bookmarks exports, from Firefox, Chrome, etc., and merges them
+ into a single set of bookmarks. Outputs an bookmarks HTML file.
 
 Usage:
-    consolidate.py <firefox-bookmarks> <chrome-bookmarks>
+    consolidate.py <bookmarks-A> <bookmarks-B>
     consolidate.py (-h|--help)
 
 Arguments:
-    <firefox-bookmarks> Name of MLS
-    <chrome-bookmarks>  Name of RETS Resource
-    (-h|--help)         This information screen
+    <bookmarks-A> Bookmarks HTML file A
+    <bookmarks-B> Bookmarks HTML file B
+    (-h|--help)   This information screen
 
 """
 
@@ -31,8 +31,8 @@ if __name__ == "__main__":
         exit(1)
 
     # parse and load HTML bookmarks files
-    bookmarks_a = bookmarks_parser.parse(arguments['<firefox-bookmarks>'])
-    bookmarks_b = bookmarks_parser.parse(arguments['<chrome-bookmarks>'])
+    bookmarks_a = bookmarks_parser.parse(arguments['<bookmarks-A>'])
+    bookmarks_b = bookmarks_parser.parse(arguments['<bookmarks-B>'])
 
     bc = BookmarksConsolidator()
     res = bc.consolidate_bookmarks(bookmarks_a, bookmarks_b)

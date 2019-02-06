@@ -2,7 +2,13 @@ import time
 
 
 class HtmlExporter:
-    def export_html(self, bookmarks_bar, other_bookmarks, bookmarks_menu):
+    """Class to export NETSCAPE-Bookmark-file-1 format HTML bookmarks file.
+
+    NOTE: Data is immediately written through `output_file` handle in order to avoid memory overflows trying to
+    concatenate the text.
+    """
+
+    def export_html(self, bookmarks_bar, bookmarks_menu, other_bookmarks):
         """Export NETSCAPE-Bookmark-file-1 format HTML bookmarks file."""
         filepath = 'bookmarks_export.html'
         output_file = open(filepath, mode='w', encoding='utf-8')
@@ -30,6 +36,7 @@ class HtmlExporter:
         output_file.close()
 
     def _create_html_node(self, output_file, bookmarks, timestamp, level):
+        """Recursive method to generate a HTML nodes for a given set of bookmarks."""
         base_space = '    ' * level
         if level > 0:
             output_file.write("\n{}<DL><p>".format(base_space))

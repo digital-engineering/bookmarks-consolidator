@@ -1,9 +1,8 @@
-# Bookmarks Consolidator
+Bookmarks Consolidator
+======================
 
-### Joe Bashe 2019
-
-This program takes two sets of bookmarks, exported as HTML from Firefox, 
-Chrome, etc., and combines them together into an importable HTML file 
+Combines and consolidates two sets of bookmarks. Accepts HTML files exported 
+from Firefox, Chrome, etc., and them together into an importable HTML file 
 containing the combined bookmarks from both. Duplicate bookmarks are skipped,
 and duplicate folders are merged.
 
