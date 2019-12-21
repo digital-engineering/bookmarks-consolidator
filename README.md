@@ -13,10 +13,12 @@ Bookmarks Consolidator
 >consolidated her home library.
 >3. to make solid or firm; solidify; strengthen: to consolidate gains. 
 
-bookmarks-consolidator combines and de-duplicates two sets of bookmarks. 
-Accepts HTML files exported from Firefox, Chrome, etc., and consolidates them 
-into an importable HTML file containing the combined bookmarks from both. 
-Duplicate bookmarks are skipped, and duplicate folders are merged.
+bookmarks-consolidator is a CLI tool that combines and de-duplicates two sets of bookmarks. 
+It accepts HTML files exported from Firefox, Chrome, etc., and consolidates them 
+into an HTML file containing the combined bookmarks from both. 
+
+Duplicate bookmarks are skipped, and duplicate folders are merged. Consolidate your bookmarks
+from multiple browsers into one with this simple tool.
 
 ### Example
 
