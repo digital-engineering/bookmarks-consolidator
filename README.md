@@ -23,10 +23,10 @@ from multiple browsers into one with this simple tool.
 ### Installation
 
 ```shell script
-# Create venv
+# Create virtual environment
 python3 -m venv env
 
-# Enable venv
+# Activate virtual environment
 . env/bin/activate
 
 # Install required packages
