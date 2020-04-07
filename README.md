@@ -20,7 +20,20 @@ into an HTML file containing the combined bookmarks from both.
 Duplicate bookmarks are skipped, and duplicate folders are merged. Consolidate your bookmarks
 from multiple browsers into one with this simple tool.
 
-### Example
+### Installation
+
+```shell script
+# Create venv
+python3 -m venv env
+
+# Enable venv
+. env/bin/activate
+
+# Install required packages
+pip install -Ur requirements.txt
+```
+
+### Example usage
 
     python consolidate.py "bookmarks_1.html" "bookmarks_2.html"
 

@@ -13,9 +13,6 @@ class BookmarksConsolidator:
     # blacklisted bookmark urls
     blacklist_url = ['https://www.mozilla.org/en-US/firefox/central/', ]
 
-    def __init__(self):
-        pass
-
     def consolidate_bookmarks(self, bookmarks_a: list, bookmarks_b: list):
         """Consolidate two trees of bookmarks."""
         bookmarks_bar_a, other_bookmarks_a, bookmarks_menu_a = self._separate_bookmarks_sections(bookmarks_a)
