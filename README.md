@@ -26,7 +26,7 @@ from multiple browsers into one with this simple tool.
 # Create virtual environment
 python3 -m venv env
 
-# Activate virtual environment (linux or git bash)
+# Activate virtual environment
 . env/bin/activate
 
 # Install required packages
